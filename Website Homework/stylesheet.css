@@ -1,0 +1,21 @@
+h1 
+{
+    font-family: "Verdana"; 
+    font-size: 36px; 
+    text-align: center;
+    border-bottom: 2px solid skyblue;
+}
+h2
+{
+    text-align: center;
+    border-bottom: 1px solid skyblue;
+}
+body, h2, h3, h4, h5, h6 
+{
+    font-family: "Verdana";
+}
+blockquote 
+{ 
+    background-color: lightgray;
+    padding: 1rem;
+}
