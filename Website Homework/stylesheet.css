@@ -1,0 +1,32 @@
+h1 
+{
+    font-family: "Verdana"; 
+    font-size: 4rem; 
+    text-align: center;
+    padding-bottom: .25rem;
+    color: skyblue;
+    border-bottom: .25rem solid skyblue;
+}
+h2, h3
+{
+    text-align: center;
+    border-bottom: .1rem solid skyblue;
+}
+body 
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+body, h2, h3, h4, h5, h6 
+{
+    font-family: "Verdana";
+}
+blockquote 
+{ 
+    background-color: lightgray;
+    padding: 1rem;
+}
+footer 
+{
+    background-color: skyblue;
+}
