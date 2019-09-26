@@ -1,0 +1,25 @@
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    align-content: right;
+    background-color: #2e3532
+}
+
+#navbar_item {
+    display: inline-block;
+    padding: 5px;
+    margin: auto;
+    align-self: auto;
+    font-family: "font-family: Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 2rem;
+    color: #d2d4c8;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
