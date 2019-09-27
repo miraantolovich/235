@@ -1,27 +1,69 @@
-ul {
+/* TopNav */
+ul#topnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
     overflow: hidden;
-    background-color: #0D0221;
+    background-color: #00171F;
 }
-
-li {
+ul#topnav li {
     float: left;
 }
-  
-li a {
+ul#topnav li a {
     display: block;
-    color: white;
+    color: #FFFFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-li a:hover {
-    background-color: #0F084B;
+ul#topnav .active {
+    background-color: #007EA7;
+}
+ul#topnav li a:hover {
+    background-color: #003459;
 }
 
-.active {
-    background-color: #26408B;
+/* Flex Containers */
+.flex-container {
+    background-color: #EAEAEA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-container > div {
+    background-color: #EAEAEA;
+    flex: 0 1 40%;
+    width: 200rem;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    align-items: center;
+}
+.flex-container > div > img {
+    max-height: 40rem;
+}
+
+/*Link Colors*/
+a:link, a:hover, a:active {
+    color: #00A4DA;
+}
+a:visited {
+    color: #006B8E;
+}
+
+/* GENERAL */
+body {
+    margin:0;
+    padding:0;
+}
+footer {
+    background-color: #00171F;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+#bio {
+    padding: 1rem;
+    margin: 0;
 }
