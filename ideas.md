@@ -14,7 +14,12 @@ Platform: Desktop only
 
 Story: You start off trying to run an indie game company with one employee, you can hire artists, UX designers, and even interns! Become excited as your games give you a wonderful fan base and dedicated employees.
 
-Aesthetics: Pixel art
+Aesthetics: 
+Graphics Style: Pixel art
+Sound: 8-bit
+ * Big upgrades
+ * UI sounds
+ * Background music
 
 Gameplay:
 Mechanics: Players can choose what they want to invest in (UI, Art, Sound, Design, Programmers, etc.) to balance out the quality of their games. You can continue to buy more and more employees, but you have to balance the money you are making with the salary you have to pay them.
