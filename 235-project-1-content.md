@@ -1,5 +1,6 @@
 # Just Another Incremental Game
 Topnav: Home | Proposal | Documentation | Project
+
 Hey, you! Yeah you, I'm looking right at you. I need someone to run this company for me. Balancing salaries... creating high quality games... hiring employees... you think you can do it?
 ...
 Cool! Let's get started.
