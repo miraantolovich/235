@@ -46,4 +46,22 @@ This is what the UI should look like. There should be a bar up top with money an
 
 Plays when: players buy big upgrades, UI buttons are clicked, and as background music.
 
+## Gameplay
+___
+### Mechanics
+Players can choose what they want to invest in (UI, Art, Sound, Design, Programmers, etc.) to balance out the quality of their games. You can continue to buy more and more employees, but you have to balance the money you are making with the salary you have to pay them.
+
+### Controls
+Mouse (main), Keyboard (secondary)
+
+### Teaching the Game
+The game is an incremental clicker so most people will get the basic process, however, the game will have a beginning layover that will explain the layout and what you need to do.
+
+### Player Learning
+Players need to learn how to balance the quality of games, which will increase money gained, with the salaries of employees.
+
+## About the Developer
+____
+The developer is Mira Antolovich, a Game Design and Development major at Rochester Institute of Technology (RIT). She is interested in programming, UX design, and web development.
+
 Footer: Just Another Incremental Clicker Game (JAICG) | Mira Antolovich
