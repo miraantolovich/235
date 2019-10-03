@@ -65,3 +65,30 @@ ____
 The developer is Mira Antolovich, a Game Design and Development major at Rochester Institute of Technology (RIT). She is interested in programming, UX design, and web development.
 
 Footer: Just Another Incremental Clicker Game (JAICG) | Mira Antolovich
+
+________________________________Documentation Page________________________________
+
+# Just Another Incremental Game
+Topnav: Home | Proposal | Documentation | Project
+
+## Process
+____
+### Week 1
+Lorem Ipsum Text.
+### Week 2
+Lorem Ipsum Text.
+### Week 3
+Lorem Ipsum Text.
+### Week 4
+Lorem Ipsum Text.
+
+## Sources
+____ 
+### Tutorials
+Will fill this out when I make the website.
+### Images
+### Other
+
+Footer: Just Another Incremental Clicker Game (JAICG) | Mira Antolovich
+
+
