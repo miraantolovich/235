@@ -1,0 +1,151 @@
+ul#topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #021f29;
+}
+ul#topnav li a {
+    float: left;
+    display: block;
+    color: #EAEAEA;
+    text-align: center;
+    width: 23%;
+    font-size: 1.4rem;
+    padding: 1%;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+}
+ul#topnav .active {
+    background-color: #007EA7;
+}
+ul#topnav li .hover:hover {
+    background-color: #003459;
+}
+main {
+    margin: 0 5%;
+}
+h1 {
+    background-color: #00171F;
+    color: #007EA7;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1%;
+}
+body {
+    margin: 0;
+    background-color: #EAEAEA;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 2% 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #00171F;
+    color: #EAEAEA;
+    overflow: hidden;
+}
+footer > p {
+    margin: 0;
+}
+/* Image Overlay */
+#wrapper {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+.center > .container > img {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .6s ease;
+    background-color: #007EA7;
+}
+.container:hover .overlay {
+    opacity: .9;
+}
+.text {
+    color: #EAEAEA;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+#quote {
+    text-align: center;
+    background-color: silver;
+    font-size: 2rem;
+    padding: 1%;
+}
+#summary {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1%;
+}
+#placeholder {
+    margin: 50% 0;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10%;
+}
+.center {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    ul#topnav li a {
+        font-size: 1.2rem;
+        padding: 1%;
+        text-decoration: none;
+    }
+    .text {
+        font-size: .8rem;
+    }
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    #quote {
+        font-size: 1.3rem;
+    }
+    #summary {
+        font-size: 1.1rem;
+    }
+    ul#topnav li a {
+        font-size: 1rem;
+    }
+    .text {
+        font-size: .7rem;
+    }
+}
