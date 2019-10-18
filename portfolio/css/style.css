@@ -1,0 +1,42 @@
+/* Nav Bar */
+nav {
+    display: flex;
+    overflow: wrap;
+    background-color: #130303;
+
+    float: left;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+nav > a {
+    text-decoration: none;
+    color: #FFCDBC;
+    padding: 1% 0;
+    width: 10%;
+}
+nav a:hover {
+    background-color: #2D080A;
+}
+
+/* Basic */
+.italics {
+    font-style: italic;
+}
+body {
+    margin: 0;
+}
+main {
+    padding: 2% 2.5% 0;
+}
+footer {
+    background-color: #130303;
+    height: 3rem;
+    max-width: 100%;
+}
+footer p {
+    color: white;
+}
+h1 {
+    clear: both;
+}
