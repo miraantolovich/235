@@ -1,33 +1,93 @@
+/* Background Image */
 /* Nav Bar */
 nav {
     display: flex;
     overflow: wrap;
-    background-color: #130303;
-
-    float: left;
-    text-align: center;
+    justify-content: space-between;
     width: 100%;
-    max-width: 100%;
+    font-size: 2rem;
 }
-nav > a {
+nav a {
     text-decoration: none;
-    color: #FFCDBC;
-    padding: 1% 0;
-    width: 10%;
+    float: left;
+    color: #d8ab4e;
+    text-align: center;
+    padding: 1% 0 .1%;
+    width: 7rem;
+    margin-left: 1%;
+    position: relative;
 }
-nav a:hover {
-    background-color: #2D080A;
+#nav-links {
+    display: flex;
+    overflow: wrap;
+    align-items: center;
+    width: 25rem;
+    margin-right: 1%;
+}
+#nav-links a {
+    margin-left: 3%;
+}
+.hover:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #d8ab4e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.hover:hover:after {
+    width: 100%; 
+    left: 0; 
+}
+#active:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    background: #d8ab4e;
+    width: 100%;
+}
+.float-right {
+    float: right;
 }
 
-/* Basic */
+/* Big Image */
+.header-image {
+    padding: 0;
+    max-height: 20vh;
+    object-fit: cover;
+}
+.bottom {
+    transform: rotate(180deg);
+}
+/* Introduction */
 .italics {
     font-style: italic;
 }
+
+.flex {
+    display: flex;
+    overflow: wrap;
+}
+#face {
+    border-radius: 50%;
+    max-width: 20rem;
+}
 body {
     margin: 0;
+    padding: 0; 
+    background-color: #FFF;
 }
 main {
-    padding: 2% 2.5% 0;
+    margin: 0 2.5%;
+    padding: 2.5%;
 }
 footer {
     background-color: #130303;
@@ -37,6 +97,4 @@ footer {
 footer p {
     color: white;
 }
-h1 {
-    clear: both;
-}
+
