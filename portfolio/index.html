@@ -13,71 +13,75 @@
 <body>
     <!-- Nav Bar -->
     <nav>
-        <a href="#projects">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#projects">Contact</a>
-        <a href="#projects">Résumé</a>
+        <a id="active" href="#home">Home</a>
+        <div id="nav-links">
+            <a class="hover" href="#projects">Projects</a>
+            <a class="hover" href="#resume">Résumé</a>
+            <a class="hover" href="#projects">About</a>
+            <a class="hover" href="#contact">Contact</a>
+        </div>
     </nav>
 
+    <img src="media/header.svg" alt="">
     <!-- Main Part of Page -->
     <main>
-        <h1>About</h1>
-        <img id="face" src="media/face.jpeg" alt="">
-        <p>
-            Mira Antolovich <br>
-            2nd Year Game Developer at Rochester Insitute of Technology (RIT)
-        </p>
-        <p id="bio">
-            I am a second year Game Design and Developer at Rochester Institute of Technology (RIT). In my free
-            time, I enjoy working with animals at my local animal shelter, playing D&D with my friends, and playing
-            video games. I hope to get a portfolio website out of this class that I can use and link in my resume. I
-            want to create video games that people will enjoy. I want to learn the skills to be able to create
-            beautiful games that will bond people together. To do this, I plan on applying for the Masters program
-            along with a minor in Computer Science. I don't know exactly where I want to end up at the end of my RIT
-            career, but I hope to find out soon.
-        </p>
-        <h2>Projects</h2>
-        <h3>Riptide</h3>
+        <h1>Projects</h1>
+        <h2>Riptide</h2>
         <p>
             I am working with a team of seven other people to create <span class="italics">Riptide</span>. Riptide is an
             open-world RPG style game in the ocean where you play as a pirate ship, killing monsters and bosses while
             upgrading your ship.
         </p>
-        <h3>Dungeon Kill You</h3>
-        <p>
-            I am working with a team of three other people to create <span class="italics">Dungeon Kill You</span>. This
-            is a game that is a local four-player game where one person plays as the dungeon master, trying to kill the
-            dungeon explorers with traps and monsters.
-        </p>
-        <h3>Animal Shelter Database</h3>
+        <h2>Animal Shelter Database</h2>
         <p>
             I am working alone to create a SQL Server Database that is an example of an animal shelter. It handles
             customers, animals, volunteers/employees, and medical records.
         </p>
-        <h2>Academic Projects</h2>
+        <h1>Academic Projects</h1>
         <p>
             I worked with a team of three other people to create <span class="italics">Captain Bobby's Revenge</span>,a
             side-scrolling shooter in Visual Studio Monogame. You play as Captain Bobby defending the world from waves
             of armed-to-the-teeth fish.
         </p>
-        <h2>Game Jams</h2>
-        <h3>Wild MAGIC! - October 2019</h3>
+        <h1>Game Jams</h1>
+        <h2>Wild MAGIC! - October 2019</h2>
         <p>
             I worked with a team of four other people to create <span class="italics">Negative Confessions</span>, a
             narrative game where you are Baby Anubis Jr. trying to figure out whether or not the people you are
             investigating are telling the truth.
         </p>
-        <h3>GMTK 2019 - August 2019</h3>
+        <h2>GMTK 2019 - August 2019</h2>
         <p>
             I worked with one other person to create <span class="italics">One Moment, Please</span>, a turn-based
             strategy game. You play as a call center employee trying to answer a call before the robots get on the line.
         </p>
-        <h3>RIT Game Developer's Game Jam - January 2019</h3>
+        <h2>RIT Game Developer's Game Jam - January 2019</h2>
         <p>
             I worked with a team of two other people to create <span class="italics">Daily Dunce</span>, a mulit-faceted
             game where you play as a drunk man going about doing daily tasks like feeding a cat and getting groceries
             (more beer).
         </p>
+
+
+        <div class="flex">
+            <img id="face" src="media/face.JPG" alt="">
+            <div>
+                <h1>Mira Antolovich</h1>
+                <p>
+                    2nd Year Game Developer at Rochester Insitute of Technology (RIT)
+                </p>
+                <p id="bio">
+                    I am a second year Game Design and Developer at Rochester Institute of Technology (RIT). In my free
+                    time, I enjoy working with animals at my local animal shelter, playing D&D with my friends, and
+                    playing video games. I hope to get a portfolio website out of this class that I can use and link in
+                    my resume. I want to create video games that people will enjoy. I want to learn the skills to be
+                    able to create beautiful games that will bond people together. To do this, I plan on applying for
+                    the Masters program along with a minor in Computer Science. I don't know exactly where I want to
+                    end up at the end of my RIT career, but I hope to find out soon.
+                </p>
+            </div>
+        </div>
+
     </main>
 
     <footer>
