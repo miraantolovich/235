@@ -1,11 +1,13 @@
-/* Background Image */
 /* Nav Bar */
 nav {
     display: flex;
     overflow: wrap;
     justify-content: space-between;
     width: 100%;
+    max-width: 100%;
     font-size: 2rem;
+    background-color: #FFF;
+    position: fixed;
 }
 nav a {
     text-decoration: none;
@@ -21,7 +23,6 @@ nav a {
     display: flex;
     overflow: wrap;
     align-items: center;
-    width: 25rem;
     margin-right: 1%;
 }
 #nav-links a {
@@ -59,13 +60,8 @@ nav a {
 }
 
 /* Big Image */
-.header-image {
-    padding: 0;
-    max-height: 20vh;
-    object-fit: cover;
-}
-.bottom {
-    transform: rotate(180deg);
+#header {
+    width: 100vw;
 }
 /* Introduction */
 .italics {
