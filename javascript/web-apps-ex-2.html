@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>DOM-3</title>
+    <style>
+        body {
+            border: 1px solid gray;
+        }
+
+        p b {
+            transform: rotate(20deg)
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Page</h1>
+    <h2>Info</h2>
+    <h2>Pictures</h2>
+    <h2>More Info</h2>
+    <p>Blah <b>Blah</b> Blah</p>
+    <p>Blah <b>Blah</b> Blah</p>
+    <p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+    <footer>Copyright &copy; <b>20XX</b></footer>
+    <script>
+        "use strict";
+
+        // add your own code here.
+        document.getElementsByTagName('h1')[0].innerHTML = "My UFO Page";
+
+        document.getElementsByTagName('h2')[0].innerHTML = "My UFO Info";
+
+        document.getElementsByTagName('h2')[1].innerHTML = "My UFO Pictures";
+
+        document.getElementsByTagName('h2')[2].innerHTML = "";
+
+        document.body.style.color = "#a70606";
+        document.body.style.fontFamily = "sans-serif";
+
+        const pa = document.getElementsByTagName('p')[0];
+        var str = "nuforce.org";
+        var link = str.link("http://www.nuforc.org");
+        pa.innerHTML = "Report your UFO sightings here: " + link;
+        pa.style.color = "green";
+        pa.style.fontWeight = "bold";
+        pa.style.fontSize = "2em";
+        pa.style.textTransform = "uppercase";
+        pa.style.textShadow = "3px 2px #A44";
+
+        
+        document.getElementsByTagName('p')[1].innerHTML = "";
+
+        const pc = document.getElementsByTagName('p')[2];
+        const img = document.createElement("img");
+        img.src = "https://cdn.mos.cms.futurecdn.net/DZKRG3pfckUg2MmWnUJueU-320-80.jpg";
+        pc.innerHTML = "";
+        pc.appendChild(img);
+
+        document.getElementsByTagName('footer')[0].innerHTML = "Mira Antolovich | Bobby Levin 2019";
+        
+    </script>
+</body>
+
+</html>
