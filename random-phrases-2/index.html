@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>What Would Vash Say?</h1>
+        <img id = "vash-face" src="media/vash.webp" alt="">
+        <p id = "center-text">
+        </p>
+        <p id = "name">Mira Antolovich</p>
+    </div>
+
+    <p id ="center">
+        <button class="button" onclick="displayQuote()">Change the Saying</button>
+    </p>
+
+
+    <script>
+        document.title = document.getElementsByTagName('h1')[0].textContent;
+
+        var sayings = ["Love and Peace!", "If you only face forward, there is something you will miss seeing.", 
+        "I am known as Valentinez Alkalinella Xifax Sicidabohertz Gombigobilla Blue Stradivari Talentrent Pierre Andri Charton-Haymoss Ivanovici Baldeus George Doitzel Kaiser III. Don't hesitate to call.",
+        "I meditate diligently every morning. The subject is Life and Love. I quit after three seconds.",
+        "The ticket to the future, is always blank.",
+        "Dangerous toys are fun, but you can get hurt.",
+        "Thanks a lot, dream wrecker.",
+        "Repeated tragedies, repeated pain, the wishes of man are so strong and yet so frail and weak. To live, to stay alive, who would have known survival was this hard...this painful?",
+        "My name is Vash the Stampede. I have been a hunter of peace who chases the mayfly known as love, for many, many moons now." ];
+        document.getElementsByTagName('p')[0].innerHTML = sayings[Math.floor(Math.random() * sayings.length)];
+
+
+        function displayQuote() {
+            document.getElementsByTagName('p')[0].innerHTML = sayings[Math.floor(Math.random() * sayings.length)];
+        }
+    </script>
+</body>
+
+</html>
