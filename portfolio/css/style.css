@@ -10,11 +10,16 @@ nav {
 
     font-size: 2rem;
     background-color: #d8ab4e;
+
+    transition: 0.3s all;
+}
+.change-color {
+    background-color: #FFF;
 }
 nav a {
     text-decoration: none;
     float: left;
-    color: white;
+    color: #FFF;
     width: 7rem;
     margin-left: 1%;
     position: relative;
@@ -38,7 +43,7 @@ nav a {
     height: 1px;
     left: 50%;
     position: absolute;
-    background: white;
+    background: #FFF;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
@@ -52,7 +57,7 @@ nav a {
     display: block;
     height: 1px;
     position: absolute;
-    background: white;
+    background: #FFF;
     left: 0;
     width: 100%;
 }
@@ -65,22 +70,23 @@ nav a {
     width: 100%;
 }
 
-
-
 /* Grid */
 .grid {
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 
     justify-content: center;
-    grid-column-gap: 5%;
+    grid-gap: 1rem 1rem;
 }
 .grid div {
+    border: 1px solid black;
     justify-self: center;
+    word-wrap: normal;
 }
-
-
+.grid div img {
+    width: 100%;
+}
 
 /* Introduction */
 .italics {
@@ -110,32 +116,47 @@ footer {
     max-width: 100%;
 }
 footer p {
-    color: white;
+    color: #FFF;
 }
 
+/* Font Sizes */
+p {
+    font-size: 1rem;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+}
 
-
-
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1024px) {
     main {
-        background-color: red;
+        background-color: pink;
+    }
+    .grid {
+        grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 720px) {
+    main {
+        background-color: blue;
+    }
+    nav {
+        font-size: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
     main {
         background-color: green;
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 320px) {
     main {
-        background-color: blue;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    main {
-        background-color: pink;
+        background-color: red;
     }
 }
