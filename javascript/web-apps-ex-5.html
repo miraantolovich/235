@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Web Apps-6</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        #colorform {
+            background-color: #dfecdf;
+            color: #111;
+            padding: 1em;
+            width: 400px;
+        }
+
+        #colorform p#info {
+            background-color: white;
+            color: black;
+            width: 300px;
+            height: 100px;
+            padding: .5em;
+        }
+
+        #colorform legend {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="colorform">
+        <legend>Choose your favorite color!</legend>
+        <p><input type="radio" name="colorGroup" id="colorGroup" value="red" /> Red</p>
+        <p><input type="radio" name="colorGroup" id="colorGroup" value="green" /> Green</p>
+        <p><input type="radio" name="colorGroup" id="colorGroup" value="blue" /> Blue</p>
+        <p><button id="colorButton" type="button">Submit</button></p>
+        <p id="info"></p>
+    </div>
+
+    <script>
+        /* Write your code here! */
+        let info = document.getElementById('info');
+        let legend = document.querySelector('legend');
+        let buttons = document.getElementsByName('colorGroup');
+        let submit = document.getElementById('colorButton');
+
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('click', function () {
+                for (let i = 0; i < buttons.length; i++) {
+                    if (buttons[i].checked) {
+                        info.innerHTML = "You have chosen " + buttons[i].value + ".";
+                    }
+                }
+            });
+        }
+
+        submit.addEventListener('click', function () {
+            for (let i = 0; i < buttons.length; i++) {
+                info.innerHTML = "Your final choice is nothing";
+                if (buttons[i].checked) {
+                    info.innerHTML = "Your final choice is " + buttons[i].value + ".";
+                    legend.style.color = buttons[i].value;
+                    break;
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
