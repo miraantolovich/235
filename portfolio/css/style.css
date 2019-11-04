@@ -39,8 +39,10 @@ nav {
 
     font-size: 2rem;
     background-color: #d8ab4e;
-
-    transition: 0.3s all;
+    transition: top 0.3s;
+}
+.nav-up {
+    top: -2.25rem;
 }
 .change-color {
     background-color: #FFF;

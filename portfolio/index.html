@@ -13,7 +13,7 @@
 
 <body>
     <!-- Nav Bar -->
-    <nav>
+    <nav id="navbar">
         <a id="active" href="#home">Home</a>
         <div id="nav-links">
             <a class="click" href="#projects">Projects</a>
@@ -25,9 +25,9 @@
 
     <div id="image-container">
         <img id="header" src="media/trianglify-lowres.png" alt="">
-        <h1>Mira Antolovich <br>
-            Game Developer | Programmer
-        </h1>
+        <div id="tagline" onload="javascript:typeWriter()">
+            <h1>Mira Antolovich<br>Game Developer with Experience in Unity</h1>
+        </div>
     </div>
 
     <!-- Main Part of Page -->
@@ -141,6 +141,20 @@
         <p>Mira Antolovich | Game Design (RIT)</p>
     </footer>
 
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById('navbar').style.top = '0';
+            } else {
+                document.getElementById('navbar').style.top = '-3rem';
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 </body>
 
 </html>
