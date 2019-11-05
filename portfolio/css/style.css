@@ -34,12 +34,13 @@ nav {
     width: 100%;
     max-width: 100%;
     position: fixed;
+    top: 0;
     z-index: 1;
     padding-bottom: .25rem;
 
     font-size: 2rem;
     background-color: #d8ab4e;
-    transition: top 0.3s;
+    transition: top 0.5s;
 }
 .nav-up {
     top: -2.25rem;
@@ -103,11 +104,27 @@ nav a {
 #header {
     width: 100%;
 }
-#image-container h1 {
+#tagline {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
+    left: 5rem;
     color: #2D3142;
 }
+#tagline {
+    overflow: hidden; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 
 /* GRID */
 .grid {
