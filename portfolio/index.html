@@ -33,6 +33,15 @@
 
     <!-- Main Part of Page -->
     <main>
+        <!-- Sort By Label -->
+        <div id="organizeBy">
+            <button onclick="myFunction()">C#</button>
+            <!-- <button onclick="myFunction()">Web Design</button> -->
+            <button onclick="myFunction()">Level Design</button>
+            <button onclick="myFunction()">Art</button>
+        </div>
+
+        <!-- Personal Projects -->
         <h2 id="projects">Projects</h2>
         <div class="grid">
             <div>
@@ -46,6 +55,7 @@
                     monsters and bosses while upgrading your ship.
                 </p>
             </div>
+
             <div>
                 <img src="media/placeholder_image.png" alt="">
             </div>
@@ -57,6 +67,8 @@
                 </p>
             </div>
         </div>
+
+        <!-- Academic Projects -->
         <h2>Academic Projects</h2>
         <div class="grid">
             <div>
@@ -70,6 +82,7 @@
                     defending the world from waves of armed-to-the-teeth fish.
                 </p>
             </div>
+
             <div>
                 <img src="media/placeholder_image.png" alt="">
             </div>
@@ -81,6 +94,8 @@
                 </p>
             </div>
         </div>
+
+        <!-- Game Jam Projects -->
         <h2>Game Jams</h2>
         <div class="grid">
             <div>
@@ -94,6 +109,7 @@
                     trying to figure out whether or not the people you are investigating are telling the truth.
                 </p>
             </div>
+
             <div>
                 <img src="media/placeholder_image.png" alt="">
             </div>
@@ -105,6 +121,7 @@
                     robots get on the line.
                 </p>
             </div>
+
             <div>
                 <img src="media/placeholder_image.png" alt="">
             </div>
@@ -115,6 +132,7 @@
                     platformer game. You play as a man trying to bring color back into his world.
                 </p>
             </div>
+
             <div>
                 <img src="media/placeholder_image.png" alt="">
 
@@ -150,16 +168,12 @@
         </div>
 
         <h2 id="contact">Contact</h2>
-        <!--
-            TURN THIS BACK INTO PHP TO HAVE MAIL FORM WORK  
-            <?php include 'contact.php';?> 
-        -->
+        <!-- <?php include 'contact.php';?> -->
     </main>
 
     <footer>
         <p>Mira Antolovich | Game Design (RIT)</p>
     </footer>
-
 
     <script>
         let prevScrollpos = window.pageYOffset;
@@ -172,8 +186,9 @@
             }
             prevScrollpos = currentScrollPos;
         }
-        
     </script>
+
+
 </body>
 
 </html>

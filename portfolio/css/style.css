@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 /* FONT SIZES */
 html {
     font-family: 'Poppins', sans-serif;
@@ -99,14 +100,14 @@ nav a {
 
 /* HEADER IMAGE */
 #image-container {
-    position: static;
+    position: relative;
 }
 #header {
     width: 100%;
 }
 #tagline {
     position: absolute;
-    bottom: 1rem;
+    bottom: 6rem;
     left: 5rem;
     color: #2D3142;
 
@@ -124,9 +125,12 @@ nav a {
     to   { opacity: 1; }
 }
 #tagline h1 {
-    font-size: 5rem;
+    font-family: 'Rock Salt', cursive;
+    margin: .5rem;
+    font-size: 6rem;
 }
 #tagline h2 {
+    margin: .5rem;
     font-size: 2rem;
 }
 
@@ -137,7 +141,7 @@ nav a {
     grid-template-rows: auto;
 
     justify-content: center;
-    grid-gap: 1rem 1rem;
+    grid-gap: 1rem .5rem;
 }
 .grid div {
     border: 1px solid black;
@@ -152,7 +156,6 @@ nav a {
 .italics {
     font-style: italic;
 }
-
 .flex {
     display: flex;
     overflow: wrap;
@@ -217,7 +220,6 @@ textarea {
     background-color:gray;
     color:white;
 }
-
 
 /* COMPUTER */
 @media screen and (max-width: 1024px) {
