@@ -13,7 +13,7 @@ h1 {
     color: #2D3142;
 }
 h2 {
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #2D3142;
 }
 h2:after {
@@ -24,7 +24,19 @@ h2:after {
     border-bottom:1px solid #2D3142;
 }
 h3 {
+    font-size: 1.6rem;
     color: #2D3142;
+}
+h3:after {
+    content:'';
+    display:block;
+    width:100%; height:100%;
+    margin-right:-100%;
+    border-bottom:1px solid #2D3142;
+}
+h4 {
+    font-size: 1.3rem;
+    margin: 0 0 .25rem;
 }
 
 /* NAV BAR */
@@ -109,16 +121,16 @@ nav a {
     position: absolute;
     bottom: 6rem;
     left: 5rem;
+    letter-spacing: .15em; 
     color: #2D3142;
-
     overflow: hidden; 
     margin: 0 auto; 
-    letter-spacing: .15em; 
-    -webkit-animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox < 16 */
-    -ms-animation: fadein 3s; /* Internet Explorer */
-    -o-animation: fadein 3s; /* Opera < 12.1 */
-    animation: fadein 3s;
+
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -ms-animation: fadein 2s;
+    -o-animation: fadein 2s;
+    animation: fadein 2s;
 }
 @keyframes fadein {
     from { opacity: 0; }
@@ -132,6 +144,28 @@ nav a {
 #tagline h2 {
     margin: .5rem;
     font-size: 2rem;
+}
+
+/* Button Style */
+#organizeBy {
+    display: inline-block;
+}
+.button {
+    border: none;
+    background-color: #4F5D75;
+    color: #FFF;
+    height: 3rem;
+    width: 7rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:hover {
+    background-color: #2D3142;
+}
+.button:active {
+    background-color: #212536;
 }
 
 /* GRID */
@@ -187,13 +221,11 @@ form {
     width:459px;
     margin:0 auto;
 }
-
 label {
     display:block;
     margin-top:20px;
     letter-spacing:2px;
 }
-
 input, textarea {
     width:439px;
     height:27px;
@@ -205,11 +237,9 @@ input, textarea {
     font-size:0.9em;
     color:#3a3a3a;
 }
-
 textarea {
     height:213px;
 }
-
 #submit {
     width:127px;
     height:38px;
