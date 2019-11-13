@@ -2,49 +2,66 @@
     font-family:verdana,tahoma,sans-serif;
 }
 
+body {
+    background-color: lightgrey;
+}
+
  header{
-     background: url(../images/cats.jpg);
-     height:195px;
+    background: url(../images/cats.jpg);
+    height:195px;
     border-radius: 25px;
     border: 1px solid black;
  }
  
  header h1{
-     margin:0;
-     color:black;
-     text-align:center;
-     font-size:100px;
-     padding-top: 35px;
+    margin:0;
+    color:black;
+    text-align:center;
+    font-size:100px;
+    padding-top: 35px;
  }
  
- #status{
-     font-style: italic;
-     height:32px;
+#status{
+    font-style: italic;
+    height:32px;
+    padding-left: 1rem;
  }
  
+#content {
+    padding-left: 1rem;
+}
+
+h2 {
+    padding-left: 1rem;
+}
  .result {
     position: relative;
     height: 175px;
     width: 100px;
-    float:left;
-    border:1px solid gray;
+    float: left;
+    border-radius: 5px;
+    background: grey;
     padding:5px;
-    margin-left:10px;
+    margin-right: 5px;
     margin-bottom:10px;
+    text-align: center;
+    align-items: center;
 }
 
 .result img {
-    position: absolute;
-    left: 5px;
+    margin: 0 auto;
     bottom: 5px;
     display:block;
-    
+    max-height: 140px;
 }
 
 .result span{
+    position: absolute;
+    bottom: 0;
     font-size:12px;
     font-weight:bold;
     display:block;
+    line-height: 2px;
 }
 
 .result audio{
@@ -83,7 +100,9 @@ button:active{
     box-shadow : 0 0 6px rgba(0,0,0,.6);
 }
 
-button:focus {outline:0;}
+button:focus {
+    outline:0;
+}
 
 .widgets{
     margin-top: 1em;
@@ -94,12 +113,11 @@ button:focus {outline:0;}
 .allWidgets {
     margin: 1rem auto;
     padding: 1rem;
-    max-width: 40rem;
+    max-width: 25rem;
     background-color: grey;
-    
-}
-.together {
-    float: left;
+    border-radius: 25px;
     display: flex;
-    align-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
 }
